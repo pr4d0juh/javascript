@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formatando Strings</title>
+    <style>
+        body{
+            background-color: gray;
+            color: pink;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+    </style>
+</head>
+<body>
+    
+    <script>
+        var nome = window.prompt('Qual o seu nome?')
+        document.write(`<p> Olá ${nome}, seja bem vindo(a)</p>`)
+        document.write(`<p> Seu nome tem ${nome.length} letras</p>`)
+        document.write(`<p> Seu nome em letras maiúsculas é ${nome.toUpperCase()}. </p>`)
+        document.write(`<p> Seu nome letras minúsculas é ${nome.toLowerCase()} </p>`)
+
+    </script>
+</body>
+</html>
