@@ -25,7 +25,7 @@ body{
 div#header{
     display: grid;
     grid-template-areas: 
-        "header nav";
+        "header nav span";
     align-items: center;
     justify-content: space-between;
     background-color: var(--cinza);
@@ -57,4 +57,22 @@ nav > a:hover{
     color: var(--cinza);
     background-color: var(--rosa03);
     border-radius: 3px;
+}
+
+span#nav-simbol{
+    display: none;
+    grid-area: span;
+    color: var(--rosa02);
+    padding: 10px;
+    margin-right: 10px;
+}
+
+@media (min-widht: 800px){
+    nav{
+        display: none;
+    }
+
+    span#nav-simbol{
+        display: block;
+    }
 }
