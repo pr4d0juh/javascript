@@ -20,15 +20,18 @@
 
 body{
     font-family: var(--font-poppins);
+    background-color: rgb(243, 224, 227);
 }
+
+/*Header*/
 
 div#header{
     display: grid;
-    grid-template-areas: 
-        "header nav span";
+    grid-template-areas: "header nav";
     align-items: center;
     justify-content: space-between;
     background-color: var(--cinza);
+    border-bottom: 1px solid rgb(48, 44, 44);
 }
 
 header{
@@ -37,15 +40,15 @@ header{
 
 header > h1{
     font-family: var(--font-logo);
-    color: var(--rosa03);
     padding: 20px;
+    color: var(--rosa03);
 }
 
 nav{
     grid-area: nav;
     position: relative;
-    color: var(--rosa03);
     padding: 20px;
+    color: var(--rosa03);
 }
 
 nav > a{
@@ -54,25 +57,92 @@ nav > a{
 }
 
 nav > a:hover{
+    border-radius: 3px;
     color: var(--cinza);
     background-color: var(--rosa03);
-    border-radius: 3px;
 }
 
 span#nav-simbol{
     display: none;
-    grid-area: span;
-    color: var(--rosa02);
-    padding: 10px;
     margin-right: 10px;
+    padding: 10px;
+    color: var(--rosa02);
 }
 
-@media (min-widht: 800px){
-    nav{
+@media (max-width: 500px) {
+    nav > a{
         display: none;
+
     }
 
     span#nav-simbol{
         display: block;
     }
+
+}
+
+
+/*Main*/
+
+main{
+    margin: auto;
+    max-width: 800px;
+    text-align: center;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: var(--cinza);
+    color: var(--rosa02);
+}
+
+main > h1{
+    margin: 0 10px;
+    padding: 15px;
+}
+
+a.link{
+    display: grid;
+    align-items: end;
+    color: var(--cinza);
+    padding-bottom: 5px;
+}
+
+a.link:hover{
+    
+    color: #cf5389;
+    background-color: var(--cinza);
+    border-radius: 10px;
+}
+
+
+div#exercicios{
+    display: grid;
+    grid-template-areas: 
+        "vogal media" 
+        "salario maior";
+}
+
+div.link-area{
+    display: grid;
+    margin: 10px;
+    padding: 10px;
+    min-width: 50px;
+    min-height: 100px;
+    background-color: var(--rosa02);
+    border-radius: 10px;
+}
+
+div#vogal-consoante{
+    grid-area: vogal;
+}
+
+div#reajuste-salario{
+    grid-area: salario;
+}
+
+div#media{
+    grid-area: media;
+}
+
+div#maior-menor{
+    grid-area: maior;
 }
