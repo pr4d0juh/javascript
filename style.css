@@ -1,7 +1,60 @@
-/*
-marrom #423736
-roxo #987185
-bege escuro #D6AA9F
-amarelo claro #E9D5B7
-bege claro #F4E2D1
-*/
+@charset "UTF-8";
+
+*{
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ text-decoration: none;
+}
+
+
+:root{
+    --rosa01: #E6BED2;
+    --rosa02: #D895B1;
+    --rosa03: #BF7896;
+    --rosa04: #9B5372;
+    --cinza: rgb(39, 35, 39);
+    --font-poppins: "Poppins", sans-serif;
+    --font-logo: "DM Serif Text", serif;
+}
+
+body{
+    font-family: var(--font-poppins);
+}
+
+div#header{
+    display: grid;
+    grid-template-areas: 
+        "header nav";
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cinza);
+}
+
+header{
+    grid-area: header;
+}
+
+header > h1{
+    font-family: var(--font-logo);
+    color: var(--rosa03);
+    padding: 20px;
+}
+
+nav{
+    grid-area: nav;
+    position: relative;
+    color: var(--rosa03);
+    padding: 20px;
+}
+
+nav > a{
+    padding: 6px 10px;
+    color: var(--rosa02);
+}
+
+nav > a:hover{
+    color: var(--cinza);
+    background-color: var(--rosa03);
+    border-radius: 3px;
+}
