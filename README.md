@@ -1,4 +1,4 @@
-# JavaScript - Curso em vídeo
+# JavaScript
 
-Repositório para o curso de JavaScript do curso em vídeo
+Repositório criado para realização de exercícios de JavaScript
  
