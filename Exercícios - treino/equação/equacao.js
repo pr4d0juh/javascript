@@ -9,4 +9,6 @@ function calcular(){
     var raiz2 = (- b - Math.sqrt(delta) ) / 2 * a
 
     res.innerHTML = `Equação inserida: ${a}x² + ${b}x + ${c} = 0`
+    res.innerHTML = `O valor de delta é: `
+    res.innerHTML = `O valor das raízes são respectivamente: `
 }

@@ -118,7 +118,9 @@ div#exercicios{
     display: grid;
     grid-template-areas: 
         "vogal media" 
-        "salario maior";
+        "salario maior"
+        "par auxiliar"
+        "estudos estudos";
 }
 
 div.link-area{
@@ -145,4 +147,16 @@ div#media{
 
 div#maior-menor{
     grid-area: maior;
+}
+
+div#par-impar{
+    grid-area: par;
+}
+
+div#variavel-auxiliar{
+    grid-area: auxiliar;
+}
+
+div#turno-estudos{
+    grid-area: estudos;
 }
