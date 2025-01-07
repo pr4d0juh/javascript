@@ -9,18 +9,26 @@
 
 
 :root{
+    --rosa01: #FFD9DA;
+    --rosa02: #D895B1;
+    --rosa03: #AC274F;
+    --cinza1: #382E31;
+    --cinza2: #191516;
+    --font-poppins: "Poppins", sans-serif;
+    --font-logo: "DM Serif Text", serif;
+}
+
+/*
     --rosa01: #E6BED2;
     --rosa02: #D895B1;
     --rosa03: #BF7896;
     --rosa04: #9B5372;
     --cinza: rgb(39, 35, 39);
-    --font-poppins: "Poppins", sans-serif;
-    --font-logo: "DM Serif Text", serif;
-}
+*/
 
 body{
     font-family: var(--font-poppins);
-    background-color: rgb(243, 224, 227);
+    background-color: var(--cinza2);
 }
 
 /*Header*/
@@ -30,8 +38,9 @@ div#header{
     grid-template-areas: "header nav";
     align-items: center;
     justify-content: space-between;
-    background-color: var(--cinza);
+    background-color: var(--cinza1);
     border-bottom: 1px solid rgb(48, 44, 44);
+    box-shadow: 0 1px 5px black;
 }
 
 header{
@@ -53,12 +62,12 @@ nav{
 
 nav > a{
     padding: 6px 10px;
-    color: var(--rosa02);
+    color: var(--rosa03);
 }
 
 nav > a:hover{
     border-radius: 3px;
-    color: var(--cinza);
+    color: var(--cinza1);
     background-color: var(--rosa03);
 }
 
@@ -66,7 +75,7 @@ span#nav-simbol{
     display: none;
     margin-right: 10px;
     padding: 10px;
-    color: var(--rosa02);
+    color: var(--rosa03);
 }
 
 @media (max-width: 500px) {
@@ -90,8 +99,8 @@ main{
     text-align: center;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
-    background-color: var(--cinza);
-    color: var(--rosa02);
+    background-color: var(--cinza1);
+    color: var(--rosa03);
 }
 
 main > h1{
@@ -100,35 +109,30 @@ main > h1{
 }
 
 a.link{
-    display: grid;
-    align-items: end;
-    color: var(--cinza);
-    padding-bottom: 5px;
+    color: var(--cinza1);
+    padding: 5px;
+
 }
 
 a.link:hover{
-    
-    color: #cf5389;
-    background-color: var(--cinza);
-    border-radius: 10px;
+    color: var(--rosa02);
+    background-color: var(--cinza1);
+    border-radius: 5px;
 }
 
 
 div#exercicios{
     display: grid;
     grid-template-areas: 
-        "vogal media" 
-        "salario maior"
-        "par auxiliar"
-        "estudos estudos";
+        "vogal media salario maior" 
+        "par auxiliar estudos . ";
 }
 
 div.link-area{
     display: grid;
     margin: 10px;
-    padding: 10px;
-    min-width: 50px;
-    min-height: 100px;
+    max-width: 250px;
+    padding: 5px;
     background-color: var(--rosa02);
     border-radius: 10px;
 }

@@ -3,20 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vogal ou consoante?</title>
+    <title>Exercícios de JavaScript</title>
+    <link rel="stylesheet" href="vogal-ou-consoante.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="vogal-ou-consoante.css">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=menu" />
 </head>
 <body>
+    <div id="header">
+        <header>
+            <h1>Prado Trindade</h1>
+        </header>
+        <nav>
+            <span id="nav-simbol" class="material-symbols-outlined">menu</span>
+            <a href="../../index.html">Início</a>
+            <a href="#">Projetos</a>
+            <a href="#">Carreira</a>
+            <a href="#">Sobre mim</a>
+            <a href="#">Contato</a>
+        </nav>
+    </div>
         <main>
        <h1>VOGAL OU CONSOANTE?</h1>
-       <h2>Insira uma letra e descubra se ela é uma vogal ou uma consoante</h2>
-
-        <p><label for="letra"> Insira uma letra: </label></p>
-        <p><input type="text" id="letra" maxlength="1"></p>
-        <p><input type="button" id="enviar" onclick=enviar() value="Enviar"></p>
+        <p><label for="letra">Insira uma letra abaixo e descubra se ela é uma <span class="mark">vogal</span> ou uma <span class="mark">consoante:</span></label></p>
+        <input type="text" id="letra" maxlength="1"
+        >
+        <input type="button" id="enviar" onclick=enviar() value="Enviar">
 
         <div id="res">
             

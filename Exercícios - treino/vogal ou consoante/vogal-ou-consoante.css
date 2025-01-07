@@ -7,84 +7,137 @@
  text-decoration: none;
 }
 
+
 :root{
-    --verde01: #023336;
-    --verde02: #4DA674;
-    --verde03: #C1E6BA;
-    --verde04: #EAF8E7; 
-
-} 
-
-.poppins-regular {
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-  }
-  
-  .poppins-semibold {
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    font-style: normal;
-  }
-
-  body{
-    font-family: "Poppins", serif;
-    font-weight: 400;
-    font-style: normal;
-    background-color: var(--verde03);
-    color: #EAF8E7;
-
-  }
-
-  main{
-    margin: 40px auto;
-    padding: 15px;
-    width: 50%;
-    max-width: 1500px;
-    min-width: 500px;
-    background-color: var(--verde01);
-    border-radius: 10px;
-  }
-
-  h1{
-    text-align: center;
-    margin: 10px;
-  }
-  
-  h2{
-    font-size: 16px;
-    font-weight: 400;
-    text-align: center;
-    margin: 10px auto;
-    max-width: 300px; 
-  }
-
-  p{
-    text-align: center;
-    font-size: 18px;
-  }
-
-#enviar{
-    background-color: var(--verde03);
-    color: var(--verde01);
-    font-family: "Poppins", serif;
-    font-weight: 600;
-    margin: 5px;
-    padding: 5px;
-    border: none;
-    border-radius: 5px;
+    --rosa01: #FFD9DA;
+    --rosa02: #D895B1;
+    --rosa03: #AC274F;
+    --cinza1: #382E31;
+    --cinza2: #191516;
+    --font-poppins: "Poppins", sans-serif;
+    --font-logo: "DM Serif Text", serif;
 }
 
-#enviar:hover{
-    background-color: var(--verde02);
-    color: var(--verde04);
+/*
+    --rosa01: #E6BED2;
+    --rosa02: #D895B1;
+    --rosa03: #BF7896;
+    --rosa04: #9B5372;
+    --cinza: rgb(39, 35, 39);
+*/
+
+body{
+    font-family: var(--font-poppins);
+    background-color: var(--cinza2);
 }
 
-#res{
-    margin: 10px 5px;
-    text-align: center;
-    background-color: var(--verde03);
-    color: var(--verde01);
-    border-radius: 5px;
+/*Header*/
+
+div#header{
+    display: grid;
+    grid-template-areas: "header nav";
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--cinza1);
+    border-bottom: 1px solid rgb(48, 44, 44);
+    box-shadow: 0 1px 10px rgba(0, 0, 0, 0.336);
 }
 
+header{
+    grid-area: header;
+}
+
+header > h1{
+    font-family: var(--font-logo);
+    padding: 20px;
+    color: var(--rosa03);
+}
+
+nav{
+    grid-area: nav;
+    position: relative;
+    padding: 20px;
+    color: var(--rosa03);
+}
+
+nav > a{
+    padding: 6px 10px;
+    color: var(--rosa03);
+}
+
+nav > a:hover{
+    border-radius: 3px;
+    color: var(--cinza1);
+    background-color: var(--rosa03);
+}
+
+span#nav-simbol{
+    display: none;
+    margin-right: 10px;
+    padding: 10px;
+    color: var(--rosa03);
+}
+
+@media (max-width: 500px) {
+    nav > a{
+        display: none;
+
+    }
+
+    span#nav-simbol{
+        display: block;
+    }
+
+}
+
+main{
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 500px;
+  background-color: var(--cinza1);
+  padding: 20px;
+  border-radius: 10px;
+  color: var(--rosa02);
+  text-align: center;
+}
+
+main > h1{
+  text-align: center;
+  margin: 10px;
+}
+
+p{
+  font-size: 15px;
+  margin: 5px;
+}
+
+input#letra{
+  margin-top: 10px;
+}
+
+input#enviar{
+  font-family: var(--font-poppins);
+  background-color: var(--cinza1);
+  border: 1px solid var(--rosa02);
+  padding: 1px 4px;
+  color: var(--rosa01);
+  border-radius: 3px;
+}
+
+input#enviar:hover{
+  background-color: var(--rosa01);
+  color: var(--cinza1);
+}
+
+span.mark{
+  background-color: #FFD9DA;
+  color: var(--rosa03);
+  padding: 2px 3px;
+  border-radius: 3px;
+}
+
+main > div{
+  margin: 10px;
+}
