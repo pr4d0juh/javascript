@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="pt-br>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Media A B C D E </title>
+    <link rel="stylesheet" href="media.css">
+</head>
+<body>
+    <h1>Media Escolar</h1>
+    <p>Insira suas notas e receba sua média em exatas</p>
+
+    <label for="nota_m">
+        <p>Nota de Matemática</p>
+        <input type="number" name="nota_m" id="nota_m">
+    </label>
+
+    <label for="nota_f">
+        <p>Nota de Física</p>
+        <input type="number" name="nota_f" id="nota_f">
+    </label>
+
+    <label for="nota_q">
+        <p>Nota de Química</p>
+        <input type="number" name="nota_q" id="nota_q">
+    </label>
+    <div id="res">
+
+    </div>
+    <p><input type="button" value="Calcular" onclick="calcular()"></p>
+
+    <script src="media.js"></script>
+</body>
+</html>
